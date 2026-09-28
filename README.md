@@ -1,7 +1,8 @@
 Job Application Tracker
 
 A full-stack web app to track job applications end-to-end — from "Applied" to "Offer" or "Rejected" — with a live dashboard, search/filter, and per-user authentication.
-<img width="1822" height="957" alt="Screenshot 2026-09-29 005652" src="https://github.com/user-attachments/assets/0483fa5b-86a0-4c3f-a5b5-ac12c565ecf3" />
+<img width="1901" height="920" alt="Screenshot 2026-09-29 001217" src="https://github.com/user-attachments/assets/ffc82112-3c48-4741-8180-5ca34119dfbf" />
+
 <img width="1905" height="898" alt="Screenshot 2026-09-29 010534" src="https://github.com/user-attachments/assets/98ecb081-b24b-4d7e-972d-5e03a22d31ec" />
 
 
