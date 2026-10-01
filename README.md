@@ -8,8 +8,7 @@ When you're applying to internships or jobs, you quickly lose track of things: w
 
 In plain terms: sign up, add a job application with a few details, and update its status as it moves through the hiring process. The dashboard shows you, at a glance, how many applications are in each stage and which interviews are coming up.
 
-Features
-Feature	What it means
+FeaturesFeature	What it means
 Account system	Each user registers with an email and password. Passwords are never stored as plain text — they're hashed before being saved.
 Add / edit / delete applications	Store company name, position, location, company website, job posting link, interview date, and free-text notes.
 Status pipeline	Every application moves through: Applied → Online Assessment → Interview → Offer / Rejected. You can update the status directly from the table.
