@@ -8,7 +8,9 @@ When you're applying to internships or jobs, you quickly lose track of things: w
 
 In plain terms: sign up, add a job application with a few details, and update its status as it moves through the hiring process. The dashboard shows you, at a glance, how many applications are in each stage and which interviews are coming up.
 
-FeaturesFeature	What it means
+Features   
+
+Feature	What it means
 Account system	Each user registers with an email and password. Passwords are never stored as plain text — they're hashed before being saved.
 Add / edit / delete applications	Store company name, position, location, company website, job posting link, interview date, and free-text notes.
 Status pipeline	Every application moves through: Applied → Online Assessment → Interview → Offer / Rejected. You can update the status directly from the table.
@@ -18,7 +20,10 @@ Private data	You only ever see your own applications — another user's data is 
 Automated tests	The backend has a test suite that checks login, adding/editing/deleting applications, filtering, and that one user can't see another user's data.
 One-command setup	The whole app (frontend + backend + database) starts with a single Docker command — no manual installation of MySQL or Node needed.
 Continuous Integration (CI)	Every time code is pushed to GitHub, it automatically runs the tests and builds the project, so bugs are caught early.
+
 How it's built (tech stack)
+
+
 Part	Technology	Why
 Frontend	React (built with Vite)	Builds the interface — the dashboard, forms, and table the user interacts with.
 Backend	Flask (Python)	Serves a REST API: handles login, saving applications, and returning data as JSON.
@@ -44,7 +49,10 @@ When you click something (like "Add application"), React sends a request to /api
 Nginx forwards that request to the Flask backend.
 Flask checks your login token, runs the logic, and reads/writes data in MySQL through SQLAlchemy (a tool that lets Python talk to the database without writing raw SQL by hand).
 Flask sends the result back as JSON, and React updates the screen.
+
+
 Project structure
+
 job-tracker/
 ├── backend/                 # Flask API
 │   ├── app.py                # All routes, database models, and business logic
@@ -65,7 +73,9 @@ job-tracker/
 ├── docker-compose.yml        # Starts frontend + backend + database together
 ├── .env.example               # Template for environment variables (secrets)
 └── README.md
+
 Getting started
+
 Option 1: Run with Docker (recommended — easiest)
 
 You only need Docker Desktop installed. Everything else (Python, Node, MySQL) runs inside containers automatically.
